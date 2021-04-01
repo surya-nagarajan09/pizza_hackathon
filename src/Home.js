@@ -10,11 +10,10 @@ function Home() {
         width="1500"
       />
       <div className="center">
-        <p>View collections in menu</p>
-        <p>Customize your pizzza here!!!</p>
+        <p className="text">View collections in menu</p>
+        <p className="text">Customize your pizzza here!!!</p>
         <p />
       </div>
-     
     </div>
   );
 }

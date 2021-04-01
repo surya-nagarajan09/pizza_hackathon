@@ -28,3 +28,10 @@ p {
   border: 2px solid green;
   border-radius: 5px;
 }
+.text {
+  font-size: 25px;
+  font-family: ele;
+  font-weight: bold;
+  border: 2px solid green;
+  border-radius: 5px;
+}
