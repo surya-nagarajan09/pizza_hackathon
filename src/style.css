@@ -1,0 +1,34 @@
+h1,
+p {
+  font-family: Lato;
+}
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: rebeccapurple;
+  color: white;
+}
+.list {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  
+}
+.option{
+  display: flex;
+}
+.home{
+  background-image: url("https://media.istockphoto.com/photos/pizza-with-salami-ham-bacon-garlic-and-fresh-herbs-rustic-style-picture-id1204634641?b=1&k=6&m=1204634641&s=170667a&w=0&h=lOpkCOng_rz3idruhYZzcqkyvBVY8HnBj6PLgOTJYF8=");
+
+  
+  height: 100%;
+
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
