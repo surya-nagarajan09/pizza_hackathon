@@ -12,16 +12,17 @@ function Menu() {
   }, []);
   return (
     <div>
-      <div>
-        {product.map(x => (
-          <div key={product.id}>
-            <h2>{product.name}</h2>
-            <p>{product.price}</p>
-            <img src={product.url} />
-            <p> {product.size}</p>
-          </div>
-        ))}
+    <ul>{product.map(x=>(
+      <div className="display">
+       <li key={x.id}><img  src={x.url}/></li>
+      <li key={x.id}>{x.name}</li>
+      <li key={x.id}>{x.price}</li>
+      <li key={x.id}>{x.size}</li>
       </div>
+      
+    ))
+    }
+    </ul>
     </div>
   );
 }
