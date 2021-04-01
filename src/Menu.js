@@ -27,7 +27,7 @@ function Menu() {
             <p key={x.id}>
               <button className="button">Add</button>
             </p>
-            <hr/>
+         
           </div>
         ))}
       </div>

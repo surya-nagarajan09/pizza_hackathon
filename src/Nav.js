@@ -8,8 +8,8 @@ function Nav() {
       <ul className="list">
         <img
           src="https://i.postimg.cc/tJymSkN5/Pngtree-pizza-illustration-in-icon-drawn-5385559.png"
-          width="30"
-          height="30"
+          width="50"
+          height="50"
         />
         <Link to="/">
           <li className="hlo">Home</li>
