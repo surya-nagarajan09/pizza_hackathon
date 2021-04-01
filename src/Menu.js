@@ -17,7 +17,7 @@ function Menu() {
         {product.map(x => (
           <div className="display">
             <p key={x.id}>
-              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwestdale.lavapizza.ca%2Fwp-content%2Fuploads%2F2017%2F01%2Fsingle-pizza-pic.png&f=1&nofb=1" />
+              <img src="https://i.postimg.cc/9XJVsgrK/single-pizza-pic.png" />
             </p>
             <span key={x.id}>Name:{x.name}</span>
             <br />
@@ -25,8 +25,9 @@ function Menu() {
             <br />
             <span key={x.id}>Size:{x.size}</span>
             <p key={x.id}>
-              <button>Add</button>
+              <button className="button">Add</button>
             </p>
+            <hr/>
           </div>
         ))}
       </div>
