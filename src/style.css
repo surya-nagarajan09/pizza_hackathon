@@ -44,7 +44,7 @@ p {
   font-size: 15px;
   font-family: ele;
 }
-.empty{
-  text-align: center;
-  
+.display {
+  display: flex;
+  justify-content: space-around;
 }
