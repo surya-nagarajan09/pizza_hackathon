@@ -18,23 +18,23 @@ function Signup() {
     console.log(newdata);
   }
   function submit(e) {
-    
-   
-    axios.post(url, {
-      first_name: data.first_name,
-      last_name: data.last_name,
-      address: data.address,
-      code: data.code,
-      email: data.email,
-      passcode: data.passcode,
-      phonenumber: data.phonenumber
-    }).then(res=>{
-      console.log(res.data)
-    })
+    axios
+      .post(url, {
+        first_name: data.first_name,
+        last_name: data.last_name,
+        address: data.address,
+        code: data.code,
+        email: data.email,
+        passcode: data.passcode,
+        phonenumber: data.phonenumber
+      })
+      .then(res => {
+        console.log(res.data);
+      });
   }
   return (
     <div>
-      <form onSubmit={(e)=>submit(e)}>
+      <form onSubmit={e => submit(e)}>
         <p>first Name</p>
         <input
           onChange={e => handle(e)}
@@ -92,7 +92,7 @@ function Signup() {
         />
       </form>
       <div>
-        <button onClick={()=>submit()}>Sign up</button>
+        <button type="submit">Sign up</button>
       </div>
     </div>
   );
