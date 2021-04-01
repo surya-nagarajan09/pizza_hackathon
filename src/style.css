@@ -7,7 +7,7 @@ p {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: rebeccapurple;
+  background-color: white;
   color: white;
 }
 .list {
@@ -16,9 +16,15 @@ p {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  
 }
-.option{
+.option {
   display: flex;
-  width:30%
-  }
+  width: 30%;
+}
+.center {
+  text-align: center;
+  padding: 25px;
+  background-color: rgb(255, 219, 88);
+  border: 2px solid green;
+  border-radius: 5px;
+}

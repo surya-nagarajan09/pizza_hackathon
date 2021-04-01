@@ -14,7 +14,7 @@ function Home() {
         <p>Customize your pizzza here!!!</p>
         <p />
       </div>
-      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.7p4jF0-ONmDigjFHCupKpwAAAA%26pid%3DApi&f=1" />
+     
     </div>
   );
 }
