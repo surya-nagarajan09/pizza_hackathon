@@ -11,7 +11,7 @@ function Home() {
       />
       <div className="center">
         <p className="text">View collections in menu</p>
-        <p className="text">Customize your pizzza here!!!</p>
+        <p className="text">Customize your pizzza in make pizza !!</p>
         <p />
       </div>
     </div>
