@@ -16,6 +16,8 @@ function Order() {
       <div>
         {product.map(x => (
           <div className="order">
+          <span key={x.id}>Pizza Name:{x.name}</span>
+            <br />
             <span key={x.id}>Base:{x.base}</span>
             <br />
             <span key={x.id}>Cheese:{x.cheese}</span>
