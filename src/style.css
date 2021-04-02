@@ -40,9 +40,19 @@ p {
   padding: 8px;
 }
 .hlo {
-  color: green;
+ 
+  background-color: #4caf50;
+   text-decoration: none;
+  color:white;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
   font-size: 15px;
-  font-family: ele;
+  font-weight: bold;
+   
+
+
 }
 .display {
   display: flex;
