@@ -6,24 +6,27 @@ function Order() {
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
-    axios.get("https://producstsss.herokuapp.com/").then(res => {
+    axios.get("https://order-detailsll.herokuapp.com/").then(res => {
       setProduct(res.data);
       console.log(res.data);
     });
   }, []);
   return (
-    <div className="display">
-      <div className="each">
+    <div >
+      <div >
         {product.map(x => (
           <div className="display">
-            <span key={x.id}>Name:{x.base}</span>
+            <span key={x.id}>base{x.base}</span>
             <br />
-            <span key={x.id}>price:{x.sauce}</span>
+            <span key={x.id}>Cheese:{x.cheese}</span>
             <br />
-            <span key={x.id}>Size:{x.cheese}</span>
-            <p key={x.id}>
-              <button className="button">Add</button>
-            </p>
+            <span key={x.id}>Meat:{x.meat}</span>
+            <br />
+             <span key={x.id}>Sauce:{x.sauce}</span>
+            <br />
+             <span key={x.id}>veggie:{x.veggie}</span>
+            <br />
+           
          
           </div>
         ))}
