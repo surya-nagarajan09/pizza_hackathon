@@ -51,3 +51,9 @@ p {
 .center {
   text-align: center;
 }
+.order {
+  width: 300px;
+  border: 15px solid green;
+  padding: 25px;
+  margin: 20px;
+}

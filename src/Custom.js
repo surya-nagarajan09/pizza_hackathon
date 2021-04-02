@@ -9,6 +9,7 @@ function Custom() {
   const [cheese, setCheese] = useState("");
   const [veggie, setVeggie] = useState("");
   const [meat, setMeat] = useState("");
+  const [name, setName] = useState("");
 
   function handlebase(e) {
     setFramework(e.target.value);
@@ -24,6 +25,9 @@ function Custom() {
   }
   function handleMeat(e) {
     setMeat(e.target.value);
+  }
+  function handlename(e) {
+    setName(e.target.value);
   }
 
   function handleSubmit(e) {
@@ -51,6 +55,9 @@ function Custom() {
     <div>
       <div>
         <form onSubmit={handleSubmit}>
+        <label >Enter pizza name:</label>
+         <input onChange={handlename} value={name}/ >
+
           <h2>Choose your base</h2>
           <select onChange={handlebase} value={framework}>
             <option value="Thin Crust">Thin Crust</option>
@@ -104,6 +111,7 @@ function Custom() {
       <div>
         <h1>you selected</h1>
         <ul>
+        <li>{name}</li>
           <li>{framework}</li>
           <li>{top}</li>
           <li>{cheese}</li>
