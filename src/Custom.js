@@ -41,7 +41,8 @@ function Custom() {
         sauce: top,
         cheese: cheese,
         veggie: veggie,
-        meat: meat
+        meat: meat,
+        name:name
       })
       .then(res => {
         console.log(res.data);
@@ -55,11 +56,12 @@ function Custom() {
     <div>
       <div>
         <form onSubmit={handleSubmit}>
-        <label >Enter pizza name:</label>
-         <input onChange={handlename} value={name}/ >
+          <label>Enter pizza name:</label>
+          <input onChange={handlename} value={name} />
 
           <h2>Choose your base</h2>
           <select onChange={handlebase} value={framework}>
+          <option value="base">select base</option>
             <option value="Thin Crust">Thin Crust</option>
             <option value="Thick Crust ">Thick Crust </option>
             <option value="Authentic Wood-Fired Crusts">
@@ -70,6 +72,7 @@ function Custom() {
           </select>
           <h2>Choose your Sauce</h2>
           <select onChange={handletop} value={top}>
+          <option value="">Select Sauce</option>
             <option value="Spicy Red Sauces">Spicy Red Sauces</option>
             <option value="Peppery Red Sauce">Peppery Red Sauce</option>
             <option value="Sweet Pizza Sauces">Sweet Pizza Sauces</option>
@@ -78,6 +81,7 @@ function Custom() {
           </select>
           <h2>Choose your Cheese</h2>
           <select onChange={handlecheese} value={cheese}>
+           <option value="Mozzarella Cheeseeact">Select Cheese</option>
             <option value="Mozzarella Cheeseeact">Mozzarella Cheese</option>
             <option value="Provolone Cheese">Provolone Cheese</option>
             <option value="Parmesan Cheese">Parmesan Cheese</option>
@@ -87,6 +91,7 @@ function Custom() {
 
           <h2>Choose your Veggies</h2>
           <select onChange={handleveggie} value={veggie}>
+          <option value="Tomato-Onion">Select veggies</option>
             <option value="Tomato-Onion">Tomato-Onion</option>
             <option value="Mushrooms, Garlic and Mint Pizza">
               Mushrooms, Garlic and Mint Pizza
@@ -97,21 +102,23 @@ function Custom() {
           </select>
           <h2>Choose your Meat</h2>
           <select onChange={handleMeat} value={meat}>
+           <option value="Pepperoni ">Select Meat </option>
             <option value="Pepperoni ">Pepperoni </option>
             <option value="Salami">Salami</option>
             <option value="Proscuitto">Proscuitto</option>
             <option value="Sausage">Sausage</option>
             <option value="Beef">Beef</option>
           </select>
+          <p/>
 
           <br />
           <button type="submit">Submit</button>
         </form>
       </div>
       <div>
-        <h1>you selected</h1>
+        <h1>you select</h1>
         <ul>
-        <li>{name}</li>
+          <li>{name}</li>
           <li>{framework}</li>
           <li>{top}</li>
           <li>{cheese}</li>
@@ -119,7 +126,7 @@ function Custom() {
           <li>{meat}</li>
         </ul>
         <div>
-        <h1 className="center">Go to my orders</h1>
+          <h1 className="center">Go to my orders</h1>
         </div>
       </div>
     </div>
