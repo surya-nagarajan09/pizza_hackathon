@@ -30,6 +30,9 @@ function Signup() {
       })
       .then(res => {
         console.log(res.data);
+      })
+      .catch(err => {
+        console.log(err);
       });
   }
   return (
@@ -90,10 +93,8 @@ function Signup() {
           id="phonenumber"
           value={data.phonenumber}
         />
-      </form>
-      <div>
         <button type="submit">Sign up</button>
-      </div>
+      </form>
     </div>
   );
 }
