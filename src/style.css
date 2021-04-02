@@ -55,7 +55,6 @@ p {
   border: 1px solid green;
   background-color: lightblue;
   padding: 10px;
-
 }
 input[type="text"],
 select {
@@ -82,3 +81,41 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #45a049;
 }
+.orderdetail {
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+  font-style: ele;
+  font-weight: bold;
+}
+.orderborder{
+  border: 1px solid green;
+  background-color: lightblue;
+  padding: 10px;
+
+}
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button {
+  background-color:rgb(255, 219, 88);;
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+

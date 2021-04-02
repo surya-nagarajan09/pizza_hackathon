@@ -13,7 +13,7 @@ function Custom() {
   const [adress, setAdress] = useState("");
   const [phone, setPhone] = useState("");
   const [qty, setQty] = useState("");
-   function handleqty(e) {
+  function handleqty(e) {
     setQty(e.target.value);
   }
   function handleadress(e) {
@@ -57,7 +57,7 @@ function Custom() {
         name: name,
         adress: adress,
         phone: phone,
-        qty:qty
+        qty: qty
       })
       .then(res => {
         console.log(res.data);
@@ -136,19 +136,19 @@ function Custom() {
           <button type="submit">Submit</button>
         </form>
       </div>
-      <div>
-        <h1>you select</h1>
+      <div className="orderborder">
+        <h1 className="orderdetail">Customized Pizza</h1>
         <ul>
-          <li>{name}</li>
-          <li>{adress}</li>
-          <li>{phone}</li>
-           <li>{qty}</li>
-          
-          <li>{framework}</li>
-          <li>{top}</li>
-          <li>{cheese}</li>
-          <li>{veggie}</li>
-          <li>{meat}</li>
+          <li className="orderdetail">{name}</li>
+          <li className="orderdetail">{adress}</li>
+          <li className="orderdetail">{phone}</li>
+          <li className="orderdetail">{qty}</li>
+
+          <li className="orderdetail">{framework}</li>
+          <li className="orderdetail">{top}</li>
+          <li className="orderdetail">{cheese}</li>
+          <li className="orderdetail">{veggie}</li>
+          <li className="orderdetail">{meat}</li>
         </ul>
         <div>
           <h1 className="center">Go to my orders</h1>

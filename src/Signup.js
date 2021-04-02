@@ -12,6 +12,7 @@ function Signup() {
     passcode: "",
     phonenumber: ""
   });
+  
   function handle(e) {
     const newdata = { ...data };
     newdata[e.target.id] = e.target.value;
@@ -39,7 +40,7 @@ function Signup() {
   return (
     <div>
       <form onSubmit={e => submit(e)}>
-        <p>first Name</p>
+        <p>First Name</p>
         <input
           onChange={e => handle(e)}
           id="first_name"
