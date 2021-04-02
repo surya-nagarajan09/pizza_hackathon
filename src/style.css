@@ -52,10 +52,10 @@ p {
   text-align: center;
 }
 .order {
-  width: 300px;
-  border: 15px solid green;
-  padding: 25px;
-  margin: 20px;
+  border: 1px solid green;
+  background-color: lightblue;
+  padding: 10px;
+
 }
 input[type="text"],
 select {

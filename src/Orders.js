@@ -16,7 +16,11 @@ function Order() {
       <div>
         {product.map(x => (
           <div className="order">
-          <span key={x.id}>Pizza Name:{x.name}</span>
+            <span key={x.id}> Name:{x.name}</span>
+            <br />
+            <span key={x.id}> Adress:{x.adress}</span>
+            <br />
+            <span key={x.id}> Phone Number:{x.phone}</span>
             <br />
             <span key={x.id}>Base:{x.base}</span>
             <br />
@@ -27,6 +31,10 @@ function Order() {
             <span key={x.id}>Sauce:{x.sauce}</span>
             <br />
             <span key={x.id}>veggie:{x.veggie}</span>
+            <br />
+            <span key={x.id}>qty:{x.qty}</span>
+            <br />
+            <span key={x.id}>price {qty * 300}</span>
             <br />
           </div>
         ))}
