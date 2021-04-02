@@ -24,9 +24,7 @@ function Nav() {
         <Link to="/Order">
           <li className="hlo">My Orders</li>
         </Link>
-        <Link to="/Signin">
-          <li className="hlo">Sign in</li>
-        </Link>
+       
         <Link to="/Signup">
           <li className="hlo">Sign up</li>
         </Link>
