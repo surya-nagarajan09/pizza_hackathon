@@ -76,7 +76,7 @@ function Custom() {
           <label>Enter adress</label>
           <input
             className="output"
-            type="email"
+            type="text"
             onChange={handleadress}
             value={adress}
           />
