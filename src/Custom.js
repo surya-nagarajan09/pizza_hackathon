@@ -111,7 +111,7 @@ function Custom() {
           <li>{meat}</li>
         </ul>
         <div>
-        <h1 className="center">go to my orders</h1>
+        <h1 className="center">Go to my orders</h1>
         </div>
       </div>
     </div>
