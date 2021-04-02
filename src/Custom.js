@@ -6,6 +6,9 @@ function Custom() {
   const url="https://producstsss.herokuapp.com/create_product"
    const [framework,setFramework] = useState('react');
    const [top,setTop]=useState("react")
+   const [cheese,setCheese]=useState("react")
+    const [veggie,setVeggie]=useState("react")
+    const [meat,setMeat]=useState("react")
 
  function handlebase(e){
     setFramework(e.target.value);
@@ -14,15 +17,28 @@ function Custom() {
  
     setTop(e.target.value)
  };
+  function handlecheese(e){
+ 
+    setCheese(e.target.value)
+ };
+ function handleveggie(e){
+ 
+    setVeggie(e.target.value)
+ };
+  function handleMeat(e){
+ 
+    setMeat(e.target.value)
+ };
 
   function handleSubmit(e){
     e.preventDefault();
     console.log(framework);
     console.log(top)
+    console.log(cheese)
     axios
       .post(url, {
-        first_name: framework,
-        last_name:top,
+        base: framework,
+        sauce:top,
      
       })
       .then(res => {
@@ -52,12 +68,32 @@ function Custom() {
           <option value="Pesto Sauce on Pizza">Pesto Sauce on Pizza</option>
 
         </select>
-        <h2>Choose your </h2>
-        <select onChange={handletop} value={top}>
-          <option value="react">React</option>
-          <option value="angular">Angular</option>
-          <option value="vue">Vue</option>
+        <h2>Choose your Cheese</h2>
+        <select onChange={handlecheese} value={cheese}>
+          <option value="Mozzarella Cheeseeact">Mozzarella Cheese</option>
+          <option value="Provolone Cheese">Provolone Cheese</option>
+          <option value="Parmesan Cheese">Parmesan Cheese</option>
+          <option value="Gouda">Gouda</option>
+          <option value="Goat Cheese">Goat Cheese</option>
         </select>
+
+         <h2>Choose your Veggies</h2>
+        <select onChange={handleveggie} value={veggie}>
+          <option value="Tomato-Onion">Tomato-Onion</option>
+          <option value="Provolone Cheese">Provolone Cheese</option>
+          <option value="Parmesan Cheese">Parmesan Cheese</option>
+          <option value="Gouda">Gouda</option>
+          <option value="Goat Cheese">Goat Cheese</option>
+        </select>
+         <h2>Choose your Meat</h2>
+        <select onChange={handleMeat} value={meat}>
+          <option value="Pepperoni ">Pepperoni </option>
+          <option value="Salami">Salami</option>
+          <option value="Proscuitto">Proscuitto</option>
+          <option value="Sausage">Sausage</option>
+          <option value="Beef">Beef</option>
+        </select>
+
         <br/>
         <button type="submit">Submit</button>
       </form>
