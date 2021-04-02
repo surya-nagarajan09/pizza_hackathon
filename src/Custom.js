@@ -72,11 +72,16 @@ function Custom() {
       <div>
         <form onSubmit={handleSubmit}>
           <label>Enter name:</label>
-          <input onChange={handlename} value={name} />
+          <input className="output" onChange={handlename} value={name} />
           <label>Enter adress</label>
-          <input type="email" onChange={handleadress} value={adress} />
+          <input
+            className="output"
+            type="email"
+            onChange={handleadress}
+            value={adress}
+          />
           <label>Enter phone number</label>
-          <input onChange={handlephone} value={phone} />
+          <input className="output" onChange={handlephone} value={phone} />
 
           <h2>Choose your base</h2>
           <select onChange={handlebase} value={framework}>
@@ -128,8 +133,8 @@ function Custom() {
             <option value="Sausage">Sausage</option>
             <option value="Beef">Beef</option>
           </select>
-          <label>number of Pizza</label>
-          <input onChange={handleqty} value={qty} />
+          <label className="output">Number of Pizza</label>
+          <input  type="number"className="output"onChange={handleqty} value={qty} />
           <p />
 
           <br />

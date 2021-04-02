@@ -118,4 +118,9 @@ button:hover {
   background-color: #4CAF50;
   color: white;
 }
-
+.output{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}

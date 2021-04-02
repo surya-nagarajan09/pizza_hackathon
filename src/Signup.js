@@ -65,7 +65,7 @@ function Signup() {
           placeholder="enter adress"
         />
         <label>Zip code</label>
-        <input
+        <input className="output"
           type="number"
           placeholder="Enter code"
           onChange={e => handle(e)}
@@ -73,14 +73,14 @@ function Signup() {
           value={data.code}
         />
         <p>Email adress</p>
-        <input
+        <input className="output"
           placeholder="Enter email"
           onChange={e => handle(e)}
           id="email"
           value={data.email}
         />
         <p>Passcode</p>
-        <input
+        <input className="output"
           type="password"
           placeholder="Enter passcode"
           onChange={e => handle(e)}
@@ -88,7 +88,7 @@ function Signup() {
           value={data.passcode}
         />
         <p>Phone number</p>
-        <input
+        <input className="output"
           type="number"
           placeholder="Enter mobile number"
           onChange={e => handle(e)}
