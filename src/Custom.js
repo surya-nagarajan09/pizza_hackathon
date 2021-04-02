@@ -138,7 +138,7 @@ function Custom() {
           <p />
 
           <br />
-          <button type="submit">Submit</button>
+          <button type="submit">Place Order</button>
         </form>
       </div>
       <div className="orderborder">
